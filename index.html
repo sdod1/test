@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>SharePoint Ticker</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .ticker-wrapper {
+      width: 100%;
+      overflow: hidden;
+      background-color: #fffae6;
+      color: #333;
+      padding: 10px 0;
+      border-bottom: 1px solid #ccc;
+    }
+    .ticker-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll-left 15s linear infinite;
+      padding-left: 100%;
+    }
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticker-wrapper">
+    <div class="ticker-text">
+      🔔 Welcome to the SharePoint site! | 📢 Project deadline: June 1 | 📝 Submit timesheets by Friday | 🎉 Team building event next week!
+    </div>
+  </div>
+</body>
+</html>
